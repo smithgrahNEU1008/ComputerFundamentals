@@ -14,7 +14,7 @@ allowed_credentials = {
 account_balances = {
     "Checking": 1500.00,
     "Savings": 3000.00,
-    "Credit Card": -500.00
+    "Credit Card": -500.000
 }
 
 
