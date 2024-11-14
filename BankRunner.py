@@ -3,11 +3,11 @@ from tkinter import messagebox
 
 
 allowed_credentials = {
-    "user123": "password1",
-    "user456": "password2",
-    "user789": "password3",
-    "user321": "password4",
-    "user654": "password5"
+    "user1": "password1",
+    "user4": "password2",
+    "user7": "password3",
+    "user3": "password4",
+    "user6": "password5"
 }
 
 
@@ -28,7 +28,7 @@ def login():
         show_balance_screen()
     else:
         messagebox.showerror("Login Failed", "Invalid username or password.")
-        password_entry.delete(0, tk.END)  # Clear password field for security
+        password_entry.delete(0, tk.END)
 
 
 def show_balance_screen():
@@ -66,7 +66,7 @@ def show_account_details(account):
 
 root = tk.Tk()
 root.title("Bank Terminal Login")
-root.geometry("300x200")
+root.geometry("400x200")
 
 
 username_label = tk.Label(root, text="Username")
@@ -77,7 +77,7 @@ username_entry.pack(pady=5)
 
 password_label = tk.Label(root, text="Password")
 password_label.pack(pady=5)
-password_entry = tk.Entry(root, show="*")  # Hide password input
+password_entry = tk.Entry(root, show="*") 
 password_entry.pack(pady=5)
 
 
