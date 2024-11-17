@@ -24,7 +24,7 @@ def login():
 
     if username in hashed_credentials and hashed_credentials[username] is not None:
         if bcrypt.checkpw(password.encode(), hashed_credentials[username]):
-            error_label.config(fg="white", text=f"Welcome, {username}!")
+            print("Password Correct")
         else:
             error_label.config(fg="white", text="Login Failed: Invalid username or password.")
             password_entry.delete(0, tk.END)
@@ -34,7 +34,7 @@ def login():
 
 root = tk.Tk()
 root.title("Bank Terminal Login")
-root.geometry("1024x768")
+root.geometry("900x600")
 root.configure(bg="#f7f7f7")
 
 # Create the top header bar
@@ -59,7 +59,7 @@ login_label = tk.Label(login_frame, text="Login to Your Account", font=("Arial",
 login_label.place(relx=0.5, rely=0.2, anchor=tk.CENTER)
 
 error_label = tk.Label(login_frame, text="", font=("Arial", 12), bg="#d71a1a", fg="white")
-error_label.place(x=30, y=60)
+error_label.place(x=43, y=57)
 
 username_label = tk.Label(login_frame, text="Username", font=("Arial", 14), bg="#d71a1a", fg="white")
 username_label.place(x=30, y=80)
@@ -76,7 +76,7 @@ login_button.place(relx=0.5, y=200, anchor=tk.CENTER)
 
 # Top Right: Why Choose Us?
 benefits_frame = tk.Frame(root, bg="#f7f7f7", width=400, height=200, relief="solid", borderwidth=1)
-benefits_frame.place(x=520, y=70)
+benefits_frame.place(x=510, y=120)
 
 benefits_label = tk.Label(benefits_frame, text="Why Choose Us?", font=("Arial", 18, "bold"), bg="#f7f7f7", fg="#0047ab")
 benefits_label.pack(anchor="w", padx=10, pady=10)
@@ -90,7 +90,7 @@ benefits_content.pack(anchor="w", padx=10)
 
 # Bottom Left: Latest Updates
 news_frame = tk.Frame(root, bg="#f7f7f7", width=400, height=200, relief="solid", borderwidth=1)
-news_frame.place(x=20, y=330)
+news_frame.place(x=50, y=370)
 
 news_label = tk.Label(news_frame, text="Latest Updates", font=("Arial", 18, "bold"), bg="#f7f7f7", fg="#0047ab")
 news_label.pack(anchor="w", padx=10, pady=10)
@@ -103,7 +103,7 @@ news_content.pack(anchor="w", padx=10)
 
 # Bottom Right: Testimonials
 testimonials_frame = tk.Frame(root, bg="#f7f7f7", width=400, height=200, relief="solid", borderwidth=1)
-testimonials_frame.place(x=520, y=330)
+testimonials_frame.place(x=450, y=370)
 
 testimonials_label = tk.Label(testimonials_frame, text="What Our Customers Say", font=("Arial", 18, "bold"), bg="#f7f7f7", fg="#0047ab")
 testimonials_label.pack(anchor="w", padx=10, pady=10)
