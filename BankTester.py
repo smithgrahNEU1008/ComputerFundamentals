@@ -4,7 +4,7 @@ import bcrypt
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file Changes
+# Load environment variables from .env file Changed changed
 load_dotenv()
 
 # Fetch and hash plain text passwords from environment variables
