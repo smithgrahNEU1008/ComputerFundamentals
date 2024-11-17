@@ -28,12 +28,6 @@ This project requires Python and `tkinter`, which comes pre-installed with most 
 
 To run this project, make sure you have the following libraries installed:
 
-```sh
-pip install -r requirements.txt
-```
-
-Or, you can install them individually:
-
 - **tkinter**: For creating the graphical user interface (GUI).
 - **bcrypt**: For password hashing.
   ```sh
