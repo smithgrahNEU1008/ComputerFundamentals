@@ -23,4 +23,23 @@ This project requires Python and `tkinter`, which comes pre-installed with most 
 3. Run the following command:
 
    ```bash
-   python bank_terminal.py
+   python FinalBankTerminal.py
+## Required Libraries
+
+To run this project, make sure you have the following libraries installed:
+
+```sh
+pip install -r requirements.txt
+```
+
+Or, you can install them individually:
+
+- **tkinter**: For creating the graphical user interface (GUI).
+- **bcrypt**: For password hashing.
+  ```sh
+  pip install bcrypt
+  ```
+- **python-dotenv**: For loading environment variables from a `.env` file.
+  ```sh
+  pip install python-dotenv
+  ```
